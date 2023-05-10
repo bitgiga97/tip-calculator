@@ -1,0 +1,303 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    font-family: 'Space Mono' !important;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #C5E4E7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 8.66rem;
+    height: 5.3rem;
+    background-image: url(./images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+}
+
+.calculator {
+    width: 37.5rem;
+    height: 78.9rem;
+    background: #FFFFFF;
+    box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+    border-radius: 25px 25px 0px 0px;
+}
+
+
+/*input bill section */
+
+.input-bill {
+    margin: 3.2rem;
+    width: 31.1rem;
+    height: 7.8rem;
+}
+
+#input,
+#inputNum {
+    width: 100%;
+    height: 4.8rem;
+    background: #F3F9FA;
+    border-radius: 5px;
+    border: none;
+    margin-top: 0.6rem;
+    padding-left: 20rem;
+    background-image: url(./images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: top 1.7rem left 1.9rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #00474B;
+}
+
+#inputNum {
+    background-image: url(./images/icon-person.svg);
+    padding-left: 27rem;
+}
+
+
+/* tip section */
+
+.tip {
+    margin: 0 3.2rem 3.2rem 3.2rem;
+    width: 31.1rem;
+    height: 21.6rem;
+}
+
+.percent {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1.6rem;
+    margin-top: 1.6rem;
+}
+
+.percent>button {
+    width: 14.6rem;
+    height: 4.8rem;
+    border: none;
+    background: #00474B;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.percent>:last-child {
+    width: 14.6rem;
+    height: 4.8rem;
+    border: none;
+    background: #F3F9FA;
+    color: #00474B;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.percent>:last-child::placeholder {
+    color: #547878;
+}
+
+#input::placeholder,
+#inputNum::placeholder {
+    color: #00474B;
+    opacity: 0.35;
+}
+
+
+/* input of people section */
+
+.input-people {
+    margin: 0 3.2rem 3.2rem 3.2rem;
+}
+
+
+/* output section */
+
+.output {
+    margin: 0 2.4rem 3.2rem 2.4rem;
+    width: 32.7rem;
+    height: 25.7rem;
+    background: #00474B;
+    border-radius: 15px;
+    padding: 3.7rem 2.2rem 2.4rem 2.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.output>div>p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.output>div>p>span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+    color: #7F9D9F;
+}
+
+.output>div>h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 47px;
+    letter-spacing: -0.666667px;
+    color: #26C2AE;
+}
+
+.output>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.output>input {
+    width: 28.1rem;
+    height: 4.8rem;
+    background: #0D686D;
+    border-radius: 5px;
+    border: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #00474B;
+}
+
+.output>input:hover {
+    background: #26C2AE;
+}
+
+label {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5E7A7D;
+}
+
+
+/* errors */
+
+#error {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    color: #E17457;
+    margin-top: -23px;
+    display: none;
+}
+
+#error2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    color: #E17457;
+    margin-top: -23px;
+    display: none;
+}
+
+
+/* responsive for desktop version */
+
+@media screen and (min-width:1440px) {
+    header {
+        margin-bottom: 8.8rem;
+    }
+    .calculator {
+        width: 92rem;
+        height: 48.1rem;
+        position: relative;
+        border-radius: 2.5rem;
+    }
+    .input-bill {
+        margin: 4.5rem 4.8rem 4rem 4.5rem;
+        width: 37.9rem;
+    }
+    .tip {
+        margin: 0 4.8rem 4rem 4.8rem;
+        width: 37.9rem;
+        height: 15.2rem;
+    }
+    .percent {
+        grid-template-columns: repeat(3, auto);
+        row-gap: 1.6rem;
+        column-gap: 1.4rem;
+    }
+    .percent>button {
+        width: 11.7rem;
+    }
+    .percent>:last-child {
+        width: 11.7rem;
+    }
+    .input-people {
+        margin: 0 4.8rem 4.8rem 4.8rem;
+        width: 37.9rem;
+    }
+    .output {
+        width: 41.3rem;
+        height: 41.7rem;
+        margin: 3.2rem 3.2rem 3.2rem 0;
+        position: absolute;
+        top: 0;
+        left: 47.5rem;
+    }
+    .output>div {
+        margin: 2rem;
+    }
+    .output>div>h2 {
+        font-size: 48px;
+        line-height: 71px;
+        letter-spacing: -1px;
+    }
+    .output>input {
+        width: 33.3rem;
+        margin-left: 2rem;
+        margin-top: 4rem;
+    }
+    #input {
+        padding-left: 32rem;
+    }
+    #inputNum {
+        padding-left: 32rem;
+    }
+}
